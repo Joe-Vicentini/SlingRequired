@@ -14,8 +14,8 @@ local sourceIconColors = {
     ["Base.Scarf_StripeBlackWhite"] = "Black",
     ["Base.Scarf_StripeBlueWhite"] = "Blue",
     ["Base.Scarf_StripeRedWhite"] = "Red",
-    ["Base.Sheet"] = "Beige",
-    ["Base.SheetRope"] = "Beige",
+    ["Base.Sheet"] = "White",
+    ["Base.SheetRope"] = "White",
     ["Base.Twine"] = "Brown",
 }
 
@@ -31,6 +31,9 @@ local iconColors = {
 local function iconForSource(source)
     if source:getFullType() == "Base.Belt2" then
         return "Item_SlingRequiredBrown"
+    end
+    if source:getFullType() == "Base.Sheet" or source:getFullType() == "Base.SheetRope" then
+        return "Item_SlingRequiredWhite"
     end
 
     local fallback = sourceIconColors[source:getFullType()] or "Beige"
@@ -111,6 +114,7 @@ local slingIcons = {
     Item_SlingRequiredBrown = true,
     Item_SlingRequiredGreen = true,
     Item_SlingRequiredRed = true,
+    Item_SlingRequiredWhite = true,
 }
 
 function SlingRequiredCrafting.DismantleIcon(params)
