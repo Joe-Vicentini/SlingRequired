@@ -1,11 +1,11 @@
 {
-    "MakeSlingFromBelts": "Make Makeshift Sling (Belts)",
-    "MakeSlingFromDenimStrips": "Make Makeshift Sling (Denim Strips)",
-    "MakeSlingFromLeatherStrips": "Make Makeshift Sling (Leather Strips)",
-    "MakeSlingFromNeckties": "Make Makeshift Sling (Neckties)",
-    "MakeSlingFromRopes": "Make Makeshift Sling (Ropes)",
-    "MakeSlingFromScarves": "Make Makeshift Sling (Scarves)",
-    "MakeSlingFromSheets": "Make Makeshift Sling (Sheets (including Sheet Rope))",
-    "MakeSlingFromTwine": "Make Makeshift Sling (Twine)",
+    "MakeSlingFromBelts": "Make Makeshift Sling",
+    "MakeSlingFromDenimStrips": "Make Makeshift Sling",
+    "MakeSlingFromLeatherStrips": "Make Makeshift Sling",
+    "MakeSlingFromNeckties": "Make Makeshift Sling",
+    "MakeSlingFromRopes": "Make Makeshift Sling",
+    "MakeSlingFromScarves": "Make Makeshift Sling",
+    "MakeSlingFromSheets": "Make Makeshift Sling",
+    "MakeSlingFromTwine": "Make Makeshift Sling",
     "DismantleMakeshiftSling": "Dismantle Makeshift Sling"
 }
