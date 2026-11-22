@@ -22,7 +22,7 @@ All options default to enabled. Turning a material option off prevents that mate
 
 ## Installation
 
-Install the repository as a local mod so the `42/mod.info` and `42/media` folders retain their paths, then enable **Sling Required** in the game's mod menu for a Build 42 save.
+Install the whole `SlingRequired` folder in `Zomboid/mods/`, keeping `common/` and `42/` side by side (`SlingRequired/42/mod.info` and `SlingRequired/42/media/sandbox-options.txt`). Enable **Sling Required** for the save before creating a Custom Sandbox world. Its settings are on the **Sling Required - Makeshift Sling Materials** and **Sling Required - Qualifying Back Wear** pages of the sandbox world-creation settings, not in the main-menu Mod Options screen. Restart the game after replacing local mod files; if options still do not appear, check for another installed copy of the same mod ID and inspect `Zomboid/console.txt` for loading errors.
 
 ## Build 42 notes
 
