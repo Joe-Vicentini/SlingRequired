@@ -1,6 +1,5 @@
 VERSION = 1,
 
-// Both groups share one page; the header checkboxes are decorative only.
 option SlingRequired.MaterialsHeader
 {
     type = boolean,
