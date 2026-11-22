@@ -2,6 +2,58 @@ require "SlingRequired"
 
 SlingRequiredCrafting = SlingRequiredCrafting or {}
 
+-- Source-specific defaults cover materials whose inventory color is untinted.
+local sourceIconColors = {
+    ["Base.Belt2"] = "Brown",
+    ["Base.RopeBelt"] = "Beige",
+    ["Base.DenimStrips"] = "Blue",
+    ["Base.LeatherStrips"] = "Brown",
+    ["Base.Tie_Full"] = "Beige",
+    ["Base.Rope"] = "Beige",
+    ["Base.Scarf_White"] = "Beige",
+    ["Base.Scarf_StripeBlackWhite"] = "Black",
+    ["Base.Scarf_StripeBlueWhite"] = "Blue",
+    ["Base.Scarf_StripeRedWhite"] = "Red",
+    ["Base.Sheet"] = "Beige",
+    ["Base.SheetRope"] = "Beige",
+    ["Base.Twine"] = "Brown",
+}
+
+local iconColors = {
+    Beige = { 0.75, 0.69, 0.56 },
+    Black = { 0.14, 0.14, 0.14 },
+    Blue = { 0.30, 0.48, 0.65 },
+    Brown = { 0.48, 0.29, 0.19 },
+    Green = { 0.34, 0.46, 0.27 },
+    Red = { 0.57, 0.24, 0.25 },
+}
+
+local function iconForSource(source)
+    local fallback = sourceIconColors[source:getFullType()] or "Beige"
+    local color = source:getColor()
+    local clothing = source:getClothingItem()
+    local visual = clothing and source:getVisual()
+    if visual then
+        color = visual:getTint(clothing) or color
+    end
+    if not color then return "Item_SlingRequired" .. fallback end
+
+    local r, g, b = color:getRedFloat(), color:getGreenFloat(), color:getBlueFloat()
+    -- Default white tint means the source's material/type determines its color.
+    if r > 0.9 and g > 0.9 and b > 0.9 then
+        return "Item_SlingRequired" .. fallback
+    end
+
+    local closest, minimum
+    for name, rgb in pairs(iconColors) do
+        local distance = (r - rgb[1]) ^ 2 + (g - rgb[2]) ^ 2 + (b - rgb[3]) ^ 2
+        if not minimum or distance < minimum then
+            closest, minimum = name, distance
+        end
+    end
+    return "Item_SlingRequired" .. closest
+end
+
 -- OnTest is an execution check; global OnAddToMenu functions hide disabled
 -- material groups in the Build 42 recipe panel.
 function SlingRequiredCrafting.OnTest(item, character)
@@ -58,6 +110,7 @@ function SlingRequiredCrafting.OnCreate(data, character)
     local saved = result:getModData()
     saved.SlingRequiredSourceType = original:getFullType()
     saved.SlingRequiredSourceCondition = original:getCondition()
+    saved.customInventoryIcon = iconForSource(original)
 end
 
 function SlingRequiredCrafting.Dismantle(data, character)

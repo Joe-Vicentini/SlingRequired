@@ -5,7 +5,8 @@ module SlingRequired
         ItemType = base:clothing,
         BodyLocation = base:scarf,
         ClothingItem = Scarf_White,
-        Icon = ScarfGeneric,
+        Icon = SlingRequiredBeige,
+        IconsForTexture = SlingRequiredBeige;SlingRequiredBlack;SlingRequiredBlue;SlingRequiredBrown;SlingRequiredGreen;SlingRequiredRed,
         DisplayCategory = Accessory,
         Weight = 0.2,
     }
