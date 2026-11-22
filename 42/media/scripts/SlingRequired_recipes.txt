@@ -1,0 +1,168 @@
+module SlingRequired
+{
+    craftRecipe MakeSlingFromBelts
+    {
+        Time = 60,
+        Tags = InHandCraft,
+        category = Tailoring,
+        AllowBatchCraft = false,
+        OnTest = SlingRequiredCrafting.OnTest,
+        OnCreate = SlingRequiredCrafting.OnCreate,
+        OnAddToMenu = SlingRequiredAllowBelts,
+        inputs
+        {
+            item 1 [Base.Belt2;Base.RopeBelt],
+        }
+        outputs
+        {
+            item 1 SlingRequired.MakeshiftSling,
+        }
+    }
+
+    craftRecipe MakeSlingFromDenimStrips
+    {
+        Time = 60,
+        Tags = InHandCraft,
+        category = Tailoring,
+        AllowBatchCraft = false,
+        OnTest = SlingRequiredCrafting.OnTest,
+        OnCreate = SlingRequiredCrafting.OnCreate,
+        OnAddToMenu = SlingRequiredAllowDenimStrips,
+        inputs
+        {
+            item 1 [Base.DenimStrips],
+        }
+        outputs
+        {
+            item 1 SlingRequired.MakeshiftSling,
+        }
+    }
+
+    craftRecipe MakeSlingFromLeatherStrips
+    {
+        Time = 60,
+        Tags = InHandCraft,
+        category = Tailoring,
+        AllowBatchCraft = false,
+        OnTest = SlingRequiredCrafting.OnTest,
+        OnCreate = SlingRequiredCrafting.OnCreate,
+        OnAddToMenu = SlingRequiredAllowLeatherStrips,
+        inputs
+        {
+            item 1 [Base.LeatherStrips],
+        }
+        outputs
+        {
+            item 1 SlingRequired.MakeshiftSling,
+        }
+    }
+
+    craftRecipe MakeSlingFromNeckties
+    {
+        Time = 60,
+        Tags = InHandCraft,
+        category = Tailoring,
+        AllowBatchCraft = false,
+        OnTest = SlingRequiredCrafting.OnTest,
+        OnCreate = SlingRequiredCrafting.OnCreate,
+        OnAddToMenu = SlingRequiredAllowNeckties,
+        inputs
+        {
+            item 1 [Base.Tie_Full],
+        }
+        outputs
+        {
+            item 1 SlingRequired.MakeshiftSling,
+        }
+    }
+
+    craftRecipe MakeSlingFromRopes
+    {
+        Time = 60,
+        Tags = InHandCraft,
+        category = Tailoring,
+        AllowBatchCraft = false,
+        OnTest = SlingRequiredCrafting.OnTest,
+        OnCreate = SlingRequiredCrafting.OnCreate,
+        OnAddToMenu = SlingRequiredAllowRopes,
+        inputs
+        {
+            item 1 [Base.Rope],
+        }
+        outputs
+        {
+            item 1 SlingRequired.MakeshiftSling,
+        }
+    }
+
+    craftRecipe MakeSlingFromScarves
+    {
+        Time = 60,
+        Tags = InHandCraft,
+        category = Tailoring,
+        AllowBatchCraft = false,
+        OnTest = SlingRequiredCrafting.OnTest,
+        OnCreate = SlingRequiredCrafting.OnCreate,
+        OnAddToMenu = SlingRequiredAllowScarves,
+        inputs
+        {
+            item 1 [Base.Scarf_White;Base.Scarf_StripeBlackWhite;Base.Scarf_StripeBlueWhite;Base.Scarf_StripeRedWhite],
+        }
+        outputs
+        {
+            item 1 SlingRequired.MakeshiftSling,
+        }
+    }
+
+    craftRecipe MakeSlingFromSheets
+    {
+        Time = 60,
+        Tags = InHandCraft,
+        category = Tailoring,
+        AllowBatchCraft = false,
+        OnTest = SlingRequiredCrafting.OnTest,
+        OnCreate = SlingRequiredCrafting.OnCreate,
+        OnAddToMenu = SlingRequiredAllowSheets,
+        inputs
+        {
+            item 1 [Base.Sheet;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 SlingRequired.MakeshiftSling,
+        }
+    }
+
+    craftRecipe MakeSlingFromTwine
+    {
+        Time = 60,
+        Tags = InHandCraft,
+        category = Tailoring,
+        AllowBatchCraft = false,
+        OnTest = SlingRequiredCrafting.OnTest,
+        OnCreate = SlingRequiredCrafting.OnCreate,
+        OnAddToMenu = SlingRequiredAllowTwine,
+        inputs
+        {
+            item 1 [Base.Twine],
+        }
+        outputs
+        {
+            item 1 SlingRequired.MakeshiftSling,
+        }
+    }
+
+    craftRecipe DismantleMakeshiftSling
+    {
+        Time = 30,
+        Tags = InHandCraft,
+        category = Tailoring,
+        AllowBatchCraft = false,
+        OnTest = SlingRequiredCrafting.OnTest,
+        OnCreate = SlingRequiredCrafting.Dismantle,
+        inputs
+        {
+            item 1 [SlingRequired.MakeshiftSling],
+        }
+    }
+}

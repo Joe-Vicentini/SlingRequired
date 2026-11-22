@@ -1,0 +1,12 @@
+module SlingRequired
+{
+    item MakeshiftSling
+    {
+        ItemType = base:clothing,
+        BodyLocation = base:scarf,
+        ClothingItem = Scarf_White,
+        Icon = ScarfGeneric,
+        DisplayCategory = Accessory,
+        Weight = 0.2,
+    }
+}

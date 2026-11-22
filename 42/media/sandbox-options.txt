@@ -1,0 +1,105 @@
+VERSION = 1,
+
+// Build 42 presents these as two separate pages with alphabetical options.
+option SlingRequired.Belts
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredMaterials,
+    translation = SlingRequired_Belts,
+}
+
+option SlingRequired.DenimStrips
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredMaterials,
+    translation = SlingRequired_DenimStrips,
+}
+
+option SlingRequired.LeatherStrips
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredMaterials,
+    translation = SlingRequired_LeatherStrips,
+}
+
+option SlingRequired.Neckties
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredMaterials,
+    translation = SlingRequired_Neckties,
+}
+
+option SlingRequired.Ropes
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredMaterials,
+    translation = SlingRequired_Ropes,
+}
+
+option SlingRequired.Scarves
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredMaterials,
+    translation = SlingRequired_Scarves,
+}
+
+option SlingRequired.Sheets
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredMaterials,
+    translation = SlingRequired_Sheets,
+}
+
+option SlingRequired.Twine
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredMaterials,
+    translation = SlingRequired_Twine,
+}
+option SlingRequired.HikingBackpacks
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredBackwear,
+    translation = SlingRequired_HikingBackpacks,
+}
+
+option SlingRequired.LargeFramepacks
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredBackwear,
+    translation = SlingRequired_LargeFramepacks,
+}
+
+option SlingRequired.MilitaryBackpacks
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredBackwear,
+    translation = SlingRequired_MilitaryBackpacks,
+}
+
+option SlingRequired.SchoolBackpacks
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredBackwear,
+    translation = SlingRequired_SchoolBackpacks,
+}
+
+option SlingRequired.SlingBags
+{
+    type = boolean,
+    default = true,
+    page = SlingRequiredBackwear,
+    translation = SlingRequired_SlingBags,
+}
