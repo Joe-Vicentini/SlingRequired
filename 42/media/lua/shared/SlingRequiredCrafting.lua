@@ -28,7 +28,7 @@ local iconColors = {
     Red = { 0.57, 0.24, 0.25 },
 }
 
-local function iconForSource(source)
+function SlingRequiredCrafting.iconForSource(source)
     if source:getFullType() == "Base.Belt2" then
         return "Item_SlingRequiredBrown"
     end
@@ -61,11 +61,55 @@ local function iconForSource(source)
     return "Item_SlingRequired" .. closest
 end
 
+-- Use the saved per-item icon, not a randomly selected clothing texture variant.
+local slingIcons = {
+    Item_SlingRequiredBeige = true,
+    Item_SlingRequiredBlack = true,
+    Item_SlingRequiredBlue = true,
+    Item_SlingRequiredBrown = true,
+    Item_SlingRequiredGreen = true,
+    Item_SlingRequiredRed = true,
+    Item_SlingRequiredWhite = true,
+}
+
+function SlingRequiredCrafting.textureForIcon(icon)
+    return getTexture(icon) or getTexture("media/textures/" .. icon .. ".png")
+end
+
+function SlingRequiredCrafting.ensureIcon(sling)
+    if not sling or sling:getFullType() ~= "SlingRequired.MakeshiftSling" then return nil end
+
+    local saved = sling:getModData()
+    local icon = saved.customInventoryIcon
+    if saved.SlingRequiredSourceType == "Base.Belt2" then
+        icon = "Item_SlingRequiredBrown"
+    elseif saved.SlingRequiredSourceType == "Base.Sheet" or saved.SlingRequiredSourceType == "Base.SheetRope" then
+        icon = "Item_SlingRequiredWhite"
+    elseif not slingIcons[icon] then
+        icon = "Item_SlingRequired" .. (sourceIconColors[saved.SlingRequiredSourceType] or "Beige")
+    end
+
+    saved.customInventoryIcon = icon
+    local texture = SlingRequiredCrafting.textureForIcon(icon)
+    if texture then
+        sling:setIcon(texture)
+        sling:setTexture(texture)
+    end
+
+    -- Clothing textures otherwise inherit an unrelated random scarf tint.
+    sling:setColorRed(1)
+    sling:setColorGreen(1)
+    sling:setColorBlue(1)
+    sling:setCustomColor(true)
+    return texture
+end
+
 -- OnTest is an execution check; global OnAddToMenu functions hide disabled
 -- material groups in the Build 42 recipe panel.
 function SlingRequiredCrafting.OnTest(item, character)
     if not item then return true end
     if item:getFullType() == "SlingRequired.MakeshiftSling" then
+        SlingRequiredCrafting.ensureIcon(item)
         return item:getModData().SlingRequiredSourceType ~= nil
     end
 
@@ -105,38 +149,23 @@ function SlingRequiredAllowTwine(params)
     return SlingRequired.isEnabled("Twine")
 end
 
--- Recipe icons are shared, so show the icon of the first dismantlable sling
--- available to the character when the crafting menu is populated.
-local slingIcons = {
-    Item_SlingRequiredBeige = true,
-    Item_SlingRequiredBlack = true,
-    Item_SlingRequiredBlue = true,
-    Item_SlingRequiredBrown = true,
-    Item_SlingRequiredGreen = true,
-    Item_SlingRequiredRed = true,
-    Item_SlingRequiredWhite = true,
-}
-
+-- The recipe has one shared icon. Only override it for a known selected item,
+-- or for a single available sling; item-specific context menus use that item.
 function SlingRequiredCrafting.DismantleIcon(params)
     if not params or not params.recipe then return true end
 
-    local icon = "Item_SlingRequiredBeige"
-    local inventory = params.player and params.player:getInventory()
-    if inventory then
-        local slings = inventory:getAllTypeRecurse("SlingRequired.MakeshiftSling")
-        if slings then
-            for i = 0, slings:size() - 1 do
-                local saved = slings:get(i):getModData()
-                if SlingRequired.materialOptions[saved.SlingRequiredSourceType]
-                        and slingIcons[saved.customInventoryIcon] then
-                    icon = saved.customInventoryIcon
-                    break
-                end
-            end
+    local sling = params.selectedItem or params.item
+    if not sling or sling:getFullType() ~= "SlingRequired.MakeshiftSling" then
+        sling = nil
+        local inventory = params.player and params.player:getInventory()
+        local slings = inventory and inventory:getItemsFromType("SlingRequired.MakeshiftSling", true)
+        if slings and slings:size() == 1 then
+            sling = slings:get(0)
         end
     end
 
-    local texture = getTexture(icon)
+    local texture = sling and SlingRequiredCrafting.ensureIcon(sling)
+        or SlingRequiredCrafting.textureForIcon("Item_SlingRequiredBeige")
     if texture then
         params.recipe:overrideIconTexture(texture)
     end
@@ -155,7 +184,8 @@ function SlingRequiredCrafting.OnCreate(data, character)
     local saved = result:getModData()
     saved.SlingRequiredSourceType = original:getFullType()
     saved.SlingRequiredSourceCondition = original:getCondition()
-    saved.customInventoryIcon = iconForSource(original)
+    saved.customInventoryIcon = SlingRequiredCrafting.iconForSource(original)
+    SlingRequiredCrafting.ensureIcon(result)
 end
 
 function SlingRequiredCrafting.Dismantle(data, character)
