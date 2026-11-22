@@ -22,7 +22,15 @@ All options default to enabled. Turning a material option off prevents that mate
 
 ## Installation
 
-Install the whole `SlingRequired` folder in `Zomboid/mods/`, keeping `common/` and `42/` side by side (`SlingRequired/42/mod.info` and `SlingRequired/42/media/sandbox-options.txt`). Enable **Sling Required** for the save before creating a Custom Sandbox world. Its settings are on the **Sling Required - Makeshift Sling Materials** and **Sling Required - Qualifying Back Wear** pages of the sandbox world-creation settings, not in the main-menu Mod Options screen. Restart the game after replacing local mod files; if options still do not appear, check for another installed copy of the same mod ID and inspect `Zomboid/console.txt` for loading errors.
+Install the whole `SlingRequired` folder in `Zomboid/mods/`, preserving `SlingRequired/42/mod.info` and `SlingRequired/42/media/sandbox-options.txt`. The `common/` folder may be present but does not contain the sandbox settings.
+
+To see the sandbox settings when creating a world:
+
+1. Fully close Project Zomboid after updating the local mod files.
+2. From the **main menu**, open **Mods** and enable **Sling Required** there. Enabling a mod only for an existing save is not sufficient for the new-world sandbox settings screen.
+3. Choose **Solo > Custom Sandbox** and look for **Sling Required - Makeshift Sling Materials** and **Sling Required - Qualifying Back Wear** in the sandbox option pages. These are not entries in the separate Mod Options menu.
+
+If the pages still do not appear, check whether a duplicate `SlingRequired` mod ID exists in another local mods directory or the Steam Workshop installation; the game may load a different copy of `sandbox-options.txt` than the one being edited. Inspect `Zomboid/console.txt` for errors mentioning `sandbox-options.txt`, `CustomSandboxOptions`, or `SlingRequired`. The hotbar behavior working by itself does not confirm sandbox registration: the mod defaults to enabled behavior when `SandboxVars.SlingRequired` is missing.
 
 ## Build 42 notes
 
