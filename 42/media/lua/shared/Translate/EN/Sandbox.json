@@ -1,6 +1,7 @@
 {
-    "Sandbox_SlingRequiredMaterials": "Sling Required - Makeshift Sling Materials",
-    "Sandbox_SlingRequiredBackwear": "Sling Required - Qualifying Back Wear",
+    "Sandbox_SlingRequired": "Sling Required",
+    "Sandbox_SlingRequired_MaterialsHeader": "--- Makeshift Sling Materials ---",
+    "Sandbox_SlingRequired_MaterialsHeader_tooltip": "Section heading only; this checkbox does not affect gameplay.",
     "Sandbox_SlingRequired_Belts": "Belts",
     "Sandbox_SlingRequired_Belts_tooltip": "Allow crafting makeshift slings from belts.",
     "Sandbox_SlingRequired_DenimStrips": "Denim Strips",
@@ -17,6 +18,8 @@
     "Sandbox_SlingRequired_Sheets_tooltip": "Allow crafting makeshift slings from sheets (including sheet rope).",
     "Sandbox_SlingRequired_Twine": "Twine",
     "Sandbox_SlingRequired_Twine_tooltip": "Allow crafting makeshift slings from twine.",
+    "Sandbox_SlingRequired_BackwearHeader": "--- Qualifying Back Wear ---",
+    "Sandbox_SlingRequired_BackwearHeader_tooltip": "Section heading only; this checkbox does not affect gameplay.",
     "Sandbox_SlingRequired_HikingBackpacks": "Hiking Backpacks",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "Allow worn hiking backpacks without a Back weapon attachment to unlock the Back hotbar slot. Explicit Back attachments always qualify.",
     "Sandbox_SlingRequired_LargeFramepacks": "Large Framepacks",

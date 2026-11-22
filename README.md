@@ -12,7 +12,7 @@ A Project Zomboid **Build 42** mod requiring a worn sling (or suitable back-worn
 
 ## Sandbox settings
 
-Build 42's options appear on two alphabetical pages, both using the `SlingRequired` sandbox namespace:
+Build 42's options appear on one **Sling Required** sandbox page (`SlingRequired` namespace). Two decorative, unchecked checkbox headings separate the alphabetical groups; those checkboxes do not affect gameplay:
 
 **Makeshift Sling Materials:** Belts, Denim Strips, Leather Strips, Neckties, Ropes, Scarves, Sheets (including Sheet Rope), Twine.
 
@@ -28,9 +28,9 @@ To see the sandbox settings when creating a world:
 
 1. Fully close Project Zomboid after updating the local mod files.
 2. From the **main menu**, open **Mods** and enable **Sling Required** there. Enabling a mod only for an existing save is not sufficient for the new-world sandbox settings screen.
-3. Choose **Solo > Custom Sandbox** and look for **Sling Required - Makeshift Sling Materials** and **Sling Required - Qualifying Back Wear** in the sandbox option pages. These are not entries in the separate Mod Options menu.
+3. Choose **Solo > Custom Sandbox** and look for the **Sling Required** sandbox page. The Makeshift Sling Materials and Qualifying Back Wear sections share that page. These are not entries in the separate Mod Options menu.
 
-If the pages still do not appear, check whether a duplicate `SlingRequired` mod ID exists in another local mods directory or the Steam Workshop installation; the game may load a different copy of `sandbox-options.txt` than the one being edited. Inspect `Zomboid/console.txt` for errors mentioning `sandbox-options.txt`, `CustomSandboxOptions`, or `SlingRequired`. The hotbar behavior working by itself does not confirm sandbox registration: the mod defaults to enabled behavior when `SandboxVars.SlingRequired` is missing.
+If the page still does not appear, check whether a duplicate `SlingRequired` mod ID exists in another local mods directory or the Steam Workshop installation; the game may load a different copy of `sandbox-options.txt` than the one being edited. Inspect `Zomboid/console.txt` for errors mentioning `sandbox-options.txt`, `CustomSandboxOptions`, or `SlingRequired`. The hotbar behavior working by itself does not confirm sandbox registration: the mod defaults to enabled behavior when `SandboxVars.SlingRequired` is missing.
 
 ## Build 42 notes
 
