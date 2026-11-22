@@ -19,7 +19,7 @@ option SlingRequired.Belts
 option SlingRequired.DenimStrips
 {
     type = boolean,
-    default = true,
+    default = false,
     page = SlingRequired,
     translation = SlingRequired_DenimStrips,
 }
@@ -27,7 +27,7 @@ option SlingRequired.DenimStrips
 option SlingRequired.LeatherStrips
 {
     type = boolean,
-    default = true,
+    default = false,
     page = SlingRequired,
     translation = SlingRequired_LeatherStrips,
 }
@@ -35,7 +35,7 @@ option SlingRequired.LeatherStrips
 option SlingRequired.Neckties
 {
     type = boolean,
-    default = true,
+    default = false,
     page = SlingRequired,
     translation = SlingRequired_Neckties,
 }
@@ -51,7 +51,7 @@ option SlingRequired.Ropes
 option SlingRequired.Scarves
 {
     type = boolean,
-    default = true,
+    default = false,
     page = SlingRequired,
     translation = SlingRequired_Scarves,
 }
@@ -67,7 +67,7 @@ option SlingRequired.Sheets
 option SlingRequired.Twine
 {
     type = boolean,
-    default = true,
+    default = false,
     page = SlingRequired,
     translation = SlingRequired_Twine,
 }
@@ -107,7 +107,7 @@ option SlingRequired.MilitaryBackpacks
 option SlingRequired.SchoolBackpacks
 {
     type = boolean,
-    default = true,
+    default = false,
     page = SlingRequired,
     translation = SlingRequired_SchoolBackpacks,
 }
@@ -115,7 +115,7 @@ option SlingRequired.SchoolBackpacks
 option SlingRequired.SlingBags
 {
     type = boolean,
-    default = true,
+    default = false,
     page = SlingRequired,
     translation = SlingRequired_SlingBags,
 }

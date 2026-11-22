@@ -18,7 +18,7 @@ Build 42's options appear on one **Sling Required** sandbox page (`SlingRequired
 
 **Back-Worn Gear with Built-In Slings:** Hiking Backpacks, Large Framepacks, Military Backpacks / ALICE Packs, School Backpacks, Sling Bags.
 
-All options default to enabled. Turning a material option off prevents that material from being crafted into a sling; it does not invalidate existing slings. Back-wear options are only required for items that do *not* explicitly provide the Back weapon attachment.
+By default, only Belts, Ropes, and Sheets are enabled for crafting. Hiking Backpacks, Large Framepacks, and Military Backpacks / ALICE Packs are enabled as qualifying back-worn gear; School Backpacks and Sling Bags are disabled. Turning a material option off prevents that material from being crafted into a sling; it does not invalidate existing slings. Back-wear options are only required for items that do *not* explicitly provide the Back weapon attachment.
 
 ## Installation
 
