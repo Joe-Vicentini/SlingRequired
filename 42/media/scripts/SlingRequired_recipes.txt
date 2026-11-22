@@ -2,6 +2,7 @@ module SlingRequired
 {
     craftRecipe MakeSlingFromBelts
     {
+        timedAction = MakeSheetSlingBag,
         Time = 60,
         Tags = InHandCraft,
         category = Tailoring,
@@ -21,6 +22,7 @@ module SlingRequired
 
     craftRecipe MakeSlingFromDenimStrips
     {
+        timedAction = MakeSheetSlingBag,
         Time = 60,
         Tags = InHandCraft,
         category = Tailoring,
@@ -40,6 +42,7 @@ module SlingRequired
 
     craftRecipe MakeSlingFromLeatherStrips
     {
+        timedAction = MakeSheetSlingBag,
         Time = 60,
         Tags = InHandCraft,
         category = Tailoring,
@@ -59,6 +62,7 @@ module SlingRequired
 
     craftRecipe MakeSlingFromNeckties
     {
+        timedAction = MakeSheetSlingBag,
         Time = 60,
         Tags = InHandCraft,
         category = Tailoring,
@@ -78,6 +82,7 @@ module SlingRequired
 
     craftRecipe MakeSlingFromRopes
     {
+        timedAction = MakeSheetSlingBag,
         Time = 60,
         Tags = InHandCraft,
         category = Tailoring,
@@ -97,6 +102,7 @@ module SlingRequired
 
     craftRecipe MakeSlingFromScarves
     {
+        timedAction = MakeSheetSlingBag,
         Time = 60,
         Tags = InHandCraft,
         category = Tailoring,
@@ -116,6 +122,7 @@ module SlingRequired
 
     craftRecipe MakeSlingFromSheets
     {
+        timedAction = MakeSheetSlingBag,
         Time = 60,
         Tags = InHandCraft,
         category = Tailoring,
@@ -135,6 +142,7 @@ module SlingRequired
 
     craftRecipe MakeSlingFromTwine
     {
+        timedAction = MakeSheetSlingBag,
         Time = 60,
         Tags = InHandCraft,
         category = Tailoring,
