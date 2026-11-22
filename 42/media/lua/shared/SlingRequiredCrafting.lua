@@ -29,6 +29,10 @@ local iconColors = {
 }
 
 local function iconForSource(source)
+    if source:getFullType() == "Base.Belt2" then
+        return "Item_SlingRequiredBrown"
+    end
+
     local fallback = sourceIconColors[source:getFullType()] or "Beige"
     local color = source:getColor()
     local clothing = source:getClothingItem()
@@ -96,6 +100,43 @@ end
 
 function SlingRequiredAllowTwine(params)
     return SlingRequired.isEnabled("Twine")
+end
+
+-- Recipe icons are shared, so show the icon of the first dismantlable sling
+-- available to the character when the crafting menu is populated.
+local slingIcons = {
+    Item_SlingRequiredBeige = true,
+    Item_SlingRequiredBlack = true,
+    Item_SlingRequiredBlue = true,
+    Item_SlingRequiredBrown = true,
+    Item_SlingRequiredGreen = true,
+    Item_SlingRequiredRed = true,
+}
+
+function SlingRequiredCrafting.DismantleIcon(params)
+    if not params or not params.recipe then return true end
+
+    local icon = "Item_SlingRequiredBeige"
+    local inventory = params.player and params.player:getInventory()
+    if inventory then
+        local slings = inventory:getAllTypeRecurse("SlingRequired.MakeshiftSling")
+        if slings then
+            for i = 0, slings:size() - 1 do
+                local saved = slings:get(i):getModData()
+                if SlingRequired.materialOptions[saved.SlingRequiredSourceType]
+                        and slingIcons[saved.customInventoryIcon] then
+                    icon = saved.customInventoryIcon
+                    break
+                end
+            end
+        end
+    end
+
+    local texture = getTexture(icon)
+    if texture then
+        params.recipe:overrideIconTexture(texture)
+    end
+    return true
 end
 
 function SlingRequiredCrafting.OnCreate(data, character)

@@ -157,9 +157,11 @@ module SlingRequired
         Time = 30,
         Tags = InHandCraft,
         category = Tailoring,
+        Icon = Item_SlingRequiredBeige,
         AllowBatchCraft = false,
         OnTest = SlingRequiredCrafting.OnTest,
         OnCreate = SlingRequiredCrafting.Dismantle,
+        OnAddToMenu = SlingRequiredCrafting.DismantleIcon,
         inputs
         {
             item 1 [SlingRequired.MakeshiftSling],
