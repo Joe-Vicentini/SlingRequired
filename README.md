@@ -35,6 +35,6 @@ If the page still does not appear, check whether a duplicate `SlingRequired` mod
 ## Build 42 notes
 
 - The mod uses `craftRecipe`, `ItemType = base:clothing`, and Build 42 JSON translations.
-- The makeshift sling temporarily reuses the vanilla scarf visual and `base:scarf` body location; it is not a custom shoulder model.
+- The makeshift sling reuses the vanilla bandolier meshes with a neutral cloth texture. Its `base:scarf` body location is unchanged, preserving existing equip behavior.
 - Only numeric item condition and original item type are stored for restoration. Existing mod-specific item state, fabric holes, stains, and other clothing data are not yet serialized by this implementation.
 - Not tested in a live Project Zomboid session. Verify crafting, dismantling, and hotbar changes in both single-player and multiplayer before publishing.
