@@ -8,4 +8,10 @@
     <m_AllowRandomTint>false</m_AllowRandomTint>
     <m_AttachBone></m_AttachBone>
     <textureChoices>SlingRequired/SlingRequired_Cloth</textureChoices>
+        <textureChoices>SlingRequired/SlingRequired_Cloth_Black</textureChoices>
+        <textureChoices>SlingRequired/SlingRequired_Cloth_Blue</textureChoices>
+        <textureChoices>SlingRequired/SlingRequired_Cloth_Brown</textureChoices>
+        <textureChoices>SlingRequired/SlingRequired_Cloth_Green</textureChoices>
+        <textureChoices>SlingRequired/SlingRequired_Cloth_Red</textureChoices>
+        <textureChoices>SlingRequired/SlingRequired_Cloth_White</textureChoices>
 </clothingItem>

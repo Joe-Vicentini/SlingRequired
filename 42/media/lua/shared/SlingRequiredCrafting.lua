@@ -72,6 +72,17 @@ local slingIcons = {
     Item_SlingRequiredWhite = true,
 }
 
+-- Indices match the ordered textureChoices in SlingRequired_MakeshiftSling.xml.
+local wornTextureChoices = {
+    Item_SlingRequiredBeige = 0,
+    Item_SlingRequiredBlack = 1,
+    Item_SlingRequiredBlue = 2,
+    Item_SlingRequiredBrown = 3,
+    Item_SlingRequiredGreen = 4,
+    Item_SlingRequiredRed = 5,
+    Item_SlingRequiredWhite = 6,
+}
+
 function SlingRequiredCrafting.textureForIcon(icon)
     return getTexture(icon) or getTexture("media/textures/" .. icon .. ".png")
 end
@@ -94,6 +105,16 @@ function SlingRequiredCrafting.ensureIcon(sling)
     if texture then
         sling:setIcon(texture)
         sling:setTexture(texture)
+    end
+
+    -- Use the same saved color for the worn model and inventory icon.
+    local visual = sling:getVisual()
+    if visual then
+        local choice = wornTextureChoices[icon] or 0
+        if visual:getTextureChoice() ~= choice then
+            visual:setTextureChoice(choice)
+            sling:synchWithVisual()
+        end
     end
 
     -- Clothing textures otherwise inherit an unrelated random scarf tint.
