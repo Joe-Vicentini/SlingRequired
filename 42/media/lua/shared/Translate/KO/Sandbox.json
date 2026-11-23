@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "다음 재료로 임시 멜빵을 제작할 수 있습니다: 노끈",
     "Sandbox_SlingRequired_BackwearHeader": "--- 멜빵이 내장된 등 장비 ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "멜빵이 내장된 것으로 간주할 등 장비를 선택합니다. Back 부착 지점이 명시되어 있지 않아도 적용됩니다. 명시적인 Back 부착 지점이 있는 아이템은 항상 인정됩니다. 제목의 체크박스는 게임에 영향을 주지 않습니다.",
+    "Sandbox_SlingRequired_Bandoliers": "탄띠",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "탄띠를 착용하면 단축바의 등 슬롯을 사용할 수 있습니다.",
     "Sandbox_SlingRequired_HikingBackpacks": "등산 배낭",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "착용한 등산 배낭에 Back 무기 부착 지점이 없어도 단축바의 Back 슬롯이 열립니다. 명시적인 Back 부착 지점은 항상 인정됩니다.",
     "Sandbox_SlingRequired_LargeFramepacks": "대형 프레임 배낭",

@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "Povolit výrobu provizorních popruhů z: motouz",
     "Sandbox_SlingRequired_BackwearHeader": "--- Vybavení na záda s vestavěnými popruhy ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "Vyberte vybavení na záda, které se při nošení považuje za vybavené popruhem i bez výslovného úchytu Back. Předměty s výslovným úchytem Back vždy vyhovují. Zaškrtávací políčko tohoto nadpisu nemá žádný účinek.",
+    "Sandbox_SlingRequired_Bandoliers": "Nábojové pásy",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "Nošené nábojové pásy odemknou pozici Back na liště.",
     "Sandbox_SlingRequired_HikingBackpacks": "Turistické batohy",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "Povolit, aby nošené turistické batohy bez úchytu zbraně Back zpřístupnily slot Back na rychlé liště. Výslovné úchyty Back vždy vyhovují.",
     "Sandbox_SlingRequired_LargeFramepacks": "Velké rámové batohy",

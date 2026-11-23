@@ -17,6 +17,11 @@ SlingRequired.materialOptions = {
 }
 
 SlingRequired.backwearOptions = {
+    ["Base.AmmoStrap_Brown_Bullets"] = "Bandoliers",
+    ["Base.AmmoStrap_Brown_Shells"] = "Bandoliers",
+    ["Base.AmmoStrap_Bullets"] = "Bandoliers",
+    ["Base.AmmoStrap_Bullets_308"] = "Bandoliers",
+    ["Base.AmmoStrap_Shells"] = "Bandoliers",
     ["Base.Bag_NormalHikingBag"] = "HikingBackpacks",
     ["Base.Bag_BigHikingBag"] = "HikingBackpacks",
     ["Base.Bag_CraftedFramepack_Large3"] = "LargeFramepacks",

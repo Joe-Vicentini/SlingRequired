@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "Permite confecționarea curelelor improvizate din sfoară.",
     "Sandbox_SlingRequired_BackwearHeader": "--- Echipament purtat pe spate cu curele integrate ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "Alege echipamentul purtat pe spate care este considerat prevăzut cu o curea, chiar și fără prindere Back explicită. Obiectele cu prindere Back explicită sunt întotdeauna acceptate. Caseta de bifare a acestui titlu nu are efect.",
+    "Sandbox_SlingRequired_Bandoliers": "Cartușiere",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "Cartușierele purtate deblochează slotul Back din bara rapidă.",
     "Sandbox_SlingRequired_HikingBackpacks": "Rucsacuri de drumeție",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "Permite ca echipamentele purtate precum rucsacuri de drumeție să deblocheze slotul Back din bara rapidă fără prindere de armă Back. Prinderile Back explicite sunt întotdeauna acceptate.",
     "Sandbox_SlingRequired_LargeFramepacks": "Rucsacuri mari cu cadru",

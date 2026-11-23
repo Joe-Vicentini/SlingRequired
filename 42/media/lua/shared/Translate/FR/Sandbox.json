@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "Autorise la fabrication de sangles de fortune à partir de ficelle.",
     "Sandbox_SlingRequired_BackwearHeader": "--- Équipements dorsaux avec sangles intégrées ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "Choisissez les équipements portés sur le dos considérés comme dotés d'une sangle intégrée, même sans attache Back explicite. Les objets avec une attache Back explicite sont toujours acceptés. La case de cet en-tête n'a aucun effet.",
+    "Sandbox_SlingRequired_Bandoliers": "Cartouchières",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "Permet aux cartouchières portées de débloquer l'emplacement Back de la barre de raccourcis. Les attaches Back explicites sont toujours acceptées.",
     "Sandbox_SlingRequired_HikingBackpacks": "Sacs à dos de randonnée",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "Permet aux équipements portés tels que sacs à dos de randonnée de débloquer l'emplacement Back de la barre de raccourcis sans attache d'arme Back. Les attaches Back explicites sont toujours acceptées.",
     "Sandbox_SlingRequired_LargeFramepacks": "Grands sacs à dos à armature",

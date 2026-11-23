@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "Permite fabricar correas improvisadas con cordel.",
     "Sandbox_SlingRequired_BackwearHeader": "--- Equipo de espalda con correas incorporadas ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "Elige qué equipo de espalda cuenta como equipado con una correa incorporada, aunque no tenga un anclaje Back explícito. Los objetos con anclaje Back explícito siempre son válidos. La casilla de este encabezado no tiene efecto.",
+    "Sandbox_SlingRequired_Bandoliers": "Bandoleras",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "Permite que las bandoleras equipadas desbloqueen la ranura Back de acceso rápido.",
     "Sandbox_SlingRequired_HikingBackpacks": "Mochilas de senderismo",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "Permite que mochilas de senderismo equipadas sin anclaje de arma Back desbloqueen la ranura Back de la barra rápida. Los anclajes Back explícitos siempre cuentan.",
     "Sandbox_SlingRequired_LargeFramepacks": "Mochilas de armazón grande",

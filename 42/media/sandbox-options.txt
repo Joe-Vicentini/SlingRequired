@@ -80,6 +80,14 @@ option SlingRequired.BackwearHeader
     translation = SlingRequired_BackwearHeader,
 }
 
+option SlingRequired.Bandoliers
+{
+    type = boolean,
+    default = true,
+    page = SlingRequired,
+    translation = SlingRequired_Bandoliers,
+}
+
 option SlingRequired.HikingBackpacks
 {
     type = boolean,

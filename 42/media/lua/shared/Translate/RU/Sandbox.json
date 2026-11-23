@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "Разрешить изготовление самодельных ремней из: шпагат",
     "Sandbox_SlingRequired_BackwearHeader": "--- Заплечное снаряжение со встроенными ремнями ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "Выберите заплечное снаряжение, которое считается оснащённым ремнём даже без явно указанного крепления Back. Предметы с явно указанным креплением Back подходят всегда. Флажок этого заголовка не влияет на игру.",
+    "Sandbox_SlingRequired_Bandoliers": "Патронташи",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "Надетые патронташи открывают слот Back на панели быстрого доступа.",
     "Sandbox_SlingRequired_HikingBackpacks": "Туристические рюкзаки",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "Разрешить носимым предметам, таким как туристические рюкзаки открывать слот Back на панели быстрого доступа без крепления оружия Back. Явно указанные крепления Back подходят всегда.",
     "Sandbox_SlingRequired_LargeFramepacks": "Большие каркасные рюкзаки",

@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "อนุญาตให้ทำสายสะพายชั่วคราวจาก เชือกเส้นเล็ก.",
     "Sandbox_SlingRequired_BackwearHeader": "--- อุปกรณ์สวมหลังที่มีสายสะพายในตัว ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "เลือกอุปกรณ์สวมหลังที่ถือว่ามีสายสะพายในตัว แม้ไม่มีจุดติดตั้ง Back ที่ระบุไว้ชัดเจน ไอเทมที่มีจุดติดตั้ง Back ชัดเจนจะใช้ได้เสมอ ช่องทำเครื่องหมายของหัวข้อนี้ไม่มีผลต่อเกม",
+    "Sandbox_SlingRequired_Bandoliers": "สายสะพายกระสุน",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "สายสะพายกระสุนที่สวมใส่จะปลดล็อกช่อง Back บนแถบลัด",
     "Sandbox_SlingRequired_HikingBackpacks": "เป้เดินป่า",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "อนุญาตให้อุปกรณ์ที่สวมอยู่ประเภท เป้เดินป่า ปลดล็อกช่อง Back บนแถบลัดแม้ไม่มีจุดติดอาวุธ Back จุดติดตั้ง Back ที่ระบุไว้ชัดเจนจะใช้ได้เสมอ",
     "Sandbox_SlingRequired_LargeFramepacks": "เป้โครงใหญ่",

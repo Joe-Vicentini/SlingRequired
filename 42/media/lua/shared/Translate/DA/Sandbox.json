@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "Tillad fremstilling af improviserede remme af sejlgarn.",
     "Sandbox_SlingRequired_BackwearHeader": "--- Rygudstyr med indbyggede remme ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "Vælg rygudstyr, der tæller som udstyret med en indbygget rem, også uden et udtrykkeligt Back-fæste. Genstande med et udtrykkeligt Back-fæste tæller altid. Afkrydsningsfeltet ved denne overskrift har ingen effekt.",
+    "Sandbox_SlingRequired_Bandoliers": "Patronbælter",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "Lader patronbælter låse Back-pladsen på genvejslinjen op.",
     "Sandbox_SlingRequired_HikingBackpacks": "Vandrerucksække",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "Tillad, at båret udstyr som vandrerucksække uden Back-våbenfæste låser Back-pladsen op på hurtiglinjen. Udtrykkelige Back-fæster tæller altid.",
     "Sandbox_SlingRequired_LargeFramepacks": "Store rygsække med stel",

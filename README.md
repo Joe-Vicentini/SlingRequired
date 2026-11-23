@@ -7,7 +7,7 @@ A Project Zomboid **Build 42** mod requiring a worn sling (or suitable back-worn
 - Without qualifying equipment, the Back hotbar slot is removed and an attached item is detached to inventory.
 - A worn **Makeshift Sling** enables the Back slot.
 - **Any worn item explicitly declaring `AttachmentsProvided = Back` qualifies automatically**, including items added by other mods. Other attachment types, such as `BedrollBottom`, do not count.
-- Five optional categories of vanilla backpacks and sling bags can also qualify.
+- Six optional categories of vanilla bandoliers, backpacks, and sling bags can also qualify.
 - Makeshift slings can be crafted from eight configurable material groups, without additional ingredients. Dismantling restores the exact original item type and its numeric condition as recorded just before crafting.
 
 ## Sandbox settings
@@ -16,9 +16,9 @@ Build 42's options appear on one **Sling Required** sandbox page (`SlingRequired
 
 **Materials Allowed for Sling Crafting:** Belts, Denim Strips, Leather Strips, Neckties, Ropes, Scarves, Sheets (including Sheet Rope), Twine.
 
-**Back-Worn Gear with Built-In Slings:** Hiking Backpacks, Large Framepacks, Military Backpacks / ALICE Packs, School Backpacks, Sling Bags.
+**Back-Worn Gear with Built-In Slings:** Bandoliers, Hiking Backpacks, Large Framepacks, Military Backpacks / ALICE Packs, School Backpacks, Sling Bags.
 
-By default, only Belts, Ropes, and Sheets are enabled for crafting. Hiking Backpacks, Large Framepacks, and Military Backpacks / ALICE Packs are enabled as qualifying back-worn gear; School Backpacks and Sling Bags are disabled. Turning a material option off prevents that material from being crafted into a sling; it does not invalidate existing slings. Back-wear options are only required for items that do *not* explicitly provide the Back weapon attachment.
+By default, only Belts, Ropes, and Sheets are enabled for crafting. Bandoliers, Hiking Backpacks, Large Framepacks, and Military Backpacks / ALICE Packs are enabled as qualifying back-worn gear; School Backpacks and Sling Bags are disabled. Turning a material option off prevents that material from being crafted into a sling; it does not invalidate existing slings. Back-wear options are only required for items that do *not* explicitly provide the Back weapon attachment.
 
 ## Installation
 

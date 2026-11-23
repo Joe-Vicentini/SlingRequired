@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "Consente di creare tracolle improvvisate con spago.",
     "Sandbox_SlingRequired_BackwearHeader": "--- Equipaggiamento da schiena con tracolle integrate ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "Scegli gli equipaggiamenti indossati sulla schiena considerati dotati di tracolla integrata, anche senza attacco Back esplicito. Gli oggetti con attacco Back esplicito sono sempre validi. La casella di questa intestazione non ha effetto.",
+    "Sandbox_SlingRequired_Bandoliers": "Bandoliere",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "Le bandoliere indossate sbloccano lo slot Back della barra rapida.",
     "Sandbox_SlingRequired_HikingBackpacks": "Zaini da escursionismo",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "Consente agli equipaggiamenti indossati come zaini da escursionismo di sbloccare lo slot Back della barra rapida senza attacco per armi Back. Gli attacchi Back espliciti sono sempre validi.",
     "Sandbox_SlingRequired_LargeFramepacks": "Grandi zaini con telaio",

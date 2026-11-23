@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "Erlaubt die Herstellung provisorischer Trageriemen aus Bindfaden.",
     "Sandbox_SlingRequired_BackwearHeader": "--- Rückenausrüstung mit integrierten Trageriemen ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "Wähle getragene Rückenausrüstung aus, die auch ohne ausdrücklichen Back-Befestigungspunkt als Ausrüstung mit Trageriemen gilt. Gegenstände mit ausdrücklichem Back-Befestigungspunkt zählen immer. Das Kontrollkästchen dieser Überschrift hat keine Wirkung.",
+    "Sandbox_SlingRequired_Bandoliers": "Patronengurte",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "Getragene Patronengurte schalten den Rückenplatz der Schnellzugriffsleiste frei.",
     "Sandbox_SlingRequired_HikingBackpacks": "Wanderrucksäcke",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "Erlaubt, dass getragene Wanderrucksäcke ohne Back-Waffenbefestigung den Back-Platz der Schnellzugriffsleiste freischalten. Ausdrückliche Back-Befestigungspunkte zählen immer.",
     "Sandbox_SlingRequired_LargeFramepacks": "Große Gestellrucksäcke",

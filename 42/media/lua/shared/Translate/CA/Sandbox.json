@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "Permet fabricar corretges improvisades amb cordill.",
     "Sandbox_SlingRequired_BackwearHeader": "--- Equipament d'esquena amb corretges integrades ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "Tria l'equipament d'esquena que es considera que té una corretja integrada quan es porta, fins i tot sense fixació Back explícita. Els objectes amb fixació Back explícita sempre són vàlids. La casella d'aquest títol no té cap efecte.",
+    "Sandbox_SlingRequired_Bandoliers": "Bandoleres",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "Permet que les bandoleres equipades desbloquegin la ranura Back de la barra ràpida.",
     "Sandbox_SlingRequired_HikingBackpacks": "Motxilles de senderisme",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "Permet que motxilles de senderisme portats sense fixació d'arma Back habilitin la ranura Back de la barra ràpida. Les fixacions Back explícites sempre són vàlides.",
     "Sandbox_SlingRequired_LargeFramepacks": "Motxilles de bastidor gran",

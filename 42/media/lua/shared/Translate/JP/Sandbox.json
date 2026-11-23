@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "次の素材から即席ストラップを製作できるようにします：麻ひも",
     "Sandbox_SlingRequired_BackwearHeader": "--- ストラップ付きの背負い装備 ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "ストラップ付きとみなす背負い装備を選択します。Back アタッチメントが明示されていなくても対象になります。明示的な Back アタッチメントを持つアイテムは常に対象です。この見出しのチェックボックスはゲームに影響しません。",
+    "Sandbox_SlingRequired_Bandoliers": "弾帯",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "弾帯を装備するとホットバーの背中スロットが使用可能になります。",
     "Sandbox_SlingRequired_HikingBackpacks": "登山用バックパック",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "装備中の登山用バックパックに Back 武器アタッチメントがなくても、ホットバーの Back スロットを解放します。明示的な Back アタッチメントを持つ場合は常に対象です。",
     "Sandbox_SlingRequired_LargeFramepacks": "大型フレームパック",

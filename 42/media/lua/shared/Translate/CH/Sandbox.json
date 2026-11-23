@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "允許使用以下材料製作簡易背帶：細繩",
     "Sandbox_SlingRequired_BackwearHeader": "--- 附帶背帶的背部裝備 ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "選擇哪些穿戴中的背部裝備視為具有內建背帶，即使未明確提供 Back 掛載點。明確提供 Back 掛載點的物品一律符合條件。此標題的核取方塊不影響遊戲。",
+    "Sandbox_SlingRequired_Bandoliers": "彈藥帶",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "允許穿戴彈藥帶時解鎖快捷欄的背部欄位。",
     "Sandbox_SlingRequired_HikingBackpacks": "登山背包",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "允許穿戴中的登山背包即使沒有 Back 武器掛載點，也能解鎖快捷欄的 Back 欄位。明確提供 Back 掛載點的物品一律符合條件。",
     "Sandbox_SlingRequired_LargeFramepacks": "大型框架背包",

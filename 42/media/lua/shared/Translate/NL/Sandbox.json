@@ -20,6 +20,8 @@
     "Sandbox_SlingRequired_Twine_tooltip": "Sta het maken van geïmproviseerde draagriemen toe met bindtouw.",
     "Sandbox_SlingRequired_BackwearHeader": "--- Ruguitrusting met ingebouwde draagriemen ---",
     "Sandbox_SlingRequired_BackwearHeader_tooltip": "Kies gedragen ruguitrusting die ook zonder expliciet Back-bevestigingspunt als voorzien van een draagriem geldt. Voorwerpen met een expliciet Back-bevestigingspunt tellen altijd. Het selectievakje van deze kop heeft geen effect.",
+    "Sandbox_SlingRequired_Bandoliers": "Patroonbanden",
+    "Sandbox_SlingRequired_Bandoliers_tooltip": "Gedragen patroonbanden ontgrendelen het Back-vak in de snelbalk.",
     "Sandbox_SlingRequired_HikingBackpacks": "Wandelrugzakken",
     "Sandbox_SlingRequired_HikingBackpacks_tooltip": "Sta toe dat gedragen wandelrugzakken zonder Back-wapenbevestiging het Back-vak op de snelbalk ontgrendelen. Expliciete Back-bevestigingspunten tellen altijd.",
     "Sandbox_SlingRequired_LargeFramepacks": "Grote framerugzakken",
