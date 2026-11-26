@@ -48,6 +48,17 @@ function SlingRequired.isSling(item)
     return fullType == "SlingRequired.MakeshiftSling" or fullType == "SlingRequired.ZombieBeltSling"
 end
 
+function SlingRequired.qualifiesEquipment(fullType, providesBack)
+    if fullType == "SlingRequired.MakeshiftSling"
+            or fullType == "SlingRequired.ZombieBeltSling"
+            or providesBack then
+        return true
+    end
+
+    local option = SlingRequired.backwearOptions[fullType]
+    return option ~= nil and SlingRequired.isEnabled(option)
+end
+
 function SlingRequired.qualifies(character)
     if not character then return false end
 
@@ -55,17 +66,9 @@ function SlingRequired.qualifies(character)
     for i = 0, worn:size() - 1 do
         local item = worn:getItemByIndex(i)
         if item and not character:isHandItem(item) then
-            if SlingRequired.isSling(item) then
-                return true
-            end
-
             local attachments = item:getAttachmentsProvided()
-            if attachments and attachments:contains("Back") then
-                return true
-            end
-
-            local option = SlingRequired.backwearOptions[item:getFullType()]
-            if option and SlingRequired.isEnabled(option) then
+            local providesBack = attachments ~= nil and attachments:contains("Back")
+            if SlingRequired.qualifiesEquipment(item:getFullType(), providesBack) then
                 return true
             end
         end
