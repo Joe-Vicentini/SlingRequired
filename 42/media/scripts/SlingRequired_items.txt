@@ -9,4 +9,13 @@ module SlingRequired
         DisplayCategory = Accessory,
         Weight = 0.2,
     }
+    item ZombieBeltSling
+    {
+        ItemType = base:clothing,
+        BodyLocation = base:scarf,
+        ClothingItem = SlingRequired_ZombieBeltSling,
+        Icon = SlingRequiredBrown,
+        DisplayCategory = Accessory,
+        Weight = 0.2,
+    }
 }

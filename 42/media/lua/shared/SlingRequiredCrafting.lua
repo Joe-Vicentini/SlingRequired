@@ -88,7 +88,16 @@ function SlingRequiredCrafting.textureForIcon(icon)
 end
 
 function SlingRequiredCrafting.ensureIcon(sling)
-    if not sling or sling:getFullType() ~= "SlingRequired.MakeshiftSling" then return nil end
+    if not SlingRequired.isSling(sling) then return nil end
+
+    -- Native zombie clothing generation cannot set crafting mod data.
+    -- This variant has a fixed brown clothing texture and inventory icon.
+    if sling:getFullType() == "SlingRequired.ZombieBeltSling" then
+        local saved = sling:getModData()
+        saved.SlingRequiredSourceType = "Base.Belt2"
+        saved.customInventoryIcon = "Item_SlingRequiredBrown"
+        return SlingRequiredCrafting.textureForIcon(saved.customInventoryIcon)
+    end
 
     local saved = sling:getModData()
     local icon = saved.customInventoryIcon
@@ -129,7 +138,7 @@ end
 -- material groups in the Build 42 recipe panel.
 function SlingRequiredCrafting.OnTest(item, character)
     if not item then return true end
-    if item:getFullType() == "SlingRequired.MakeshiftSling" then
+    if SlingRequired.isSling(item) then
         SlingRequiredCrafting.ensureIcon(item)
         return item:getModData().SlingRequiredSourceType ~= nil
     end
@@ -176,12 +185,15 @@ function SlingRequiredCrafting.DismantleIcon(params)
     if not params or not params.recipe then return true end
 
     local sling = params.selectedItem or params.item
-    if not sling or sling:getFullType() ~= "SlingRequired.MakeshiftSling" then
+    if not SlingRequired.isSling(sling) then
         sling = nil
         local inventory = params.player and params.player:getInventory()
         local slings = inventory and inventory:getItemsFromType("SlingRequired.MakeshiftSling", true)
-        if slings and slings:size() == 1 then
-            sling = slings:get(0)
+        local zombieSlings = inventory and inventory:getItemsFromType("SlingRequired.ZombieBeltSling", true)
+        local regularCount = slings and slings:size() or 0
+        local zombieCount = zombieSlings and zombieSlings:size() or 0
+        if regularCount + zombieCount == 1 then
+            sling = regularCount == 1 and slings:get(0) or zombieSlings:get(0)
         end
     end
 
@@ -214,6 +226,8 @@ function SlingRequiredCrafting.Dismantle(data, character)
     if not consumed or consumed:isEmpty() or not character then return end
 
     local sling = consumed:get(0)
+    if not SlingRequired.isSling(sling) then return end
+    SlingRequiredCrafting.ensureIcon(sling)
     local saved = sling:getModData()
     local sourceType = saved.SlingRequiredSourceType
 
@@ -223,5 +237,8 @@ function SlingRequiredCrafting.Dismantle(data, character)
     local restored = character:getInventory():AddItem(sourceType)
     if restored and type(saved.SlingRequiredSourceCondition) == "number" then
         restored:setCondition(saved.SlingRequiredSourceCondition)
+    elseif restored and sling:getFullType() == "SlingRequired.ZombieBeltSling" then
+        -- No original belt existed at spawn; use the looted sling's condition.
+        restored:setCondition(math.min(restored:getConditionMax(), sling:getCondition()))
     end
 end

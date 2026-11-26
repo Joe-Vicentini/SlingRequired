@@ -42,6 +42,12 @@ function SlingRequired.isEnabled(option)
     return not settings or settings[option] ~= false
 end
 
+function SlingRequired.isSling(item)
+    if not item then return false end
+    local fullType = item:getFullType()
+    return fullType == "SlingRequired.MakeshiftSling" or fullType == "SlingRequired.ZombieBeltSling"
+end
+
 function SlingRequired.qualifies(character)
     if not character then return false end
 
@@ -49,7 +55,7 @@ function SlingRequired.qualifies(character)
     for i = 0, worn:size() - 1 do
         local item = worn:getItemByIndex(i)
         if item and not character:isHandItem(item) then
-            if item:getFullType() == "SlingRequired.MakeshiftSling" then
+            if SlingRequired.isSling(item) then
                 return true
             end
 

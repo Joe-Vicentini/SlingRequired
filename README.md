@@ -10,6 +10,8 @@ A Project Zomboid **Build 42** mod requiring a worn sling (or suitable back-worn
 - Six optional categories of vanilla bandoliers, backpacks, and sling bags can also qualify.
 - Makeshift slings can be crafted from eight configurable material groups, without additional ingredients. Dismantling restores the exact original item type and its numeric condition as recorded just before crafting.
 
+- Zombies generated with carried back attachments receive a brown belt-derived makeshift sling through the vanilla attached-weapon definitions. Embedded weapons are excluded. Existing custom equipment requirements are preserved. Looted zombie slings unlock the Back slot and dismantle into a belt at the sling's numeric condition (capped at the belt's maximum).
+
 ## Sandbox settings
 
 Build 42's options appear on one **Sling Required** sandbox page (`SlingRequired` namespace). Two decorative, unchecked checkbox headings separate the alphabetical groups; those checkboxes do not affect gameplay:

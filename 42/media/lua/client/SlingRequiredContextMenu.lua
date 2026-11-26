@@ -7,11 +7,11 @@ local function nameDismantleOptions(context)
         local option = context.options[i]
         if option.onSelect == ISInventoryPaneContextMenu.OnNewCraft
                 and option.param1 and option.param1:getName() == "DismantleMakeshiftSling"
-                and option.target and option.target:getFullType() == "SlingRequired.MakeshiftSling" then
+                and SlingRequired.isSling(option.target) then
+            SlingRequiredCrafting.ensureIcon(option.target)
             local sourceType = option.target:getModData().SlingRequiredSourceType
             if SlingRequired.materialOptions[sourceType] then
                 option.name = getText(option.param1:getTranslationName()) .. " (" .. getItemNameFromFullType(sourceType) .. ")"
-                SlingRequiredCrafting.ensureIcon(option.target)
                 option.color = nil
                 option.iconTexture = nil
                 option.itemForTexture = option.target

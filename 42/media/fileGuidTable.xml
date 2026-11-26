@@ -4,4 +4,8 @@
         <path>media/clothing/clothingItems/SlingRequired_MakeshiftSling.xml</path>
         <guid>df387bbe-67ea-5890-87a8-d0807167365b</guid>
     </files>
+    <files>
+        <path>media/clothing/clothingItems/SlingRequired_ZombieBeltSling.xml</path>
+        <guid>ce7f50de-7f39-41b4-84e0-5bbd468fb3bd</guid>
+    </files>
 </fileGuidTable>

@@ -172,7 +172,7 @@ module SlingRequired
         OnAddToMenu = SlingRequiredCrafting.DismantleIcon,
         inputs
         {
-            item 1 [SlingRequired.MakeshiftSling],
+            item 1 [SlingRequired.MakeshiftSling;SlingRequired.ZombieBeltSling],
         }
     }
 }
